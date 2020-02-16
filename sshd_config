@@ -1,0 +1,4 @@
+PubkeyAuthentication yes
+PasswordAuthentication no
+AuthorizedKeysCommand /git-server/updateKeys.sh
+AuthorizedKeysCommandUser root
