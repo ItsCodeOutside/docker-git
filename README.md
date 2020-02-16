@@ -18,13 +18,13 @@ A small attempt a git docker image based on Alpine Linux and jkarlosb's existing
 
 Copy the user's public SSH key to */home/user/docker-git/git-server/keys/* (or the location you used for your run command). This example assumes you have a public key for your user:
 
-	`$ cp ~/.ssh/id_rsa.pub /home/user/docker-git/git-server/keys/mykey.pub`
+	$ cp ~/.ssh/id_rsa.pub /home/user/docker-git/git-server/keys/mykey.pub
 
 ### Disallowing a User
 
 Simply remove their key from the keys directory, for example:
 
-	`$ rm /home/user/docker-git/git-server/keys/mykey.pub`
+	$ rm /home/user/docker-git/git-server/keys/mykey.pub
 
 ### Warnings
 
