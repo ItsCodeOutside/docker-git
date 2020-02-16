@@ -7,24 +7,24 @@ A small attempt a git docker image based on Alpine Linux and jkarlosb's existing
 
 2. After pulling this repository just run:
 
-	$ docker build -t docker-git .
+	`$ docker build -t docker-git .`
 
 
 3. To execute a container from the image run:
 
-	$ docker run -d -p 2222:22 -v /home/user/docker-git/git-server/keys/:/git-server/keys -v /home/user/docker-git/repos/:/git-server/repos docker-git
+	`$ docker run -d -p 2222:22 -v /home/user/docker-git/git-server/keys/:/git-server/keys -v /home/user/docker-git/repos/:/git-server/repos docker-git`
 
 ### Allowing A User to Connect
 
 Copy the user's public SSH key to */home/user/docker-git/git-server/keys/* (or the location you used for your run command). This example assumes you have a public key for your user:
 
-	$ cp ~/.ssh/id_rsa.pub /home/user/docker-git/git-server/keys/mykey.pub
+	`$ cp ~/.ssh/id_rsa.pub /home/user/docker-git/git-server/keys/mykey.pub`
 
 ### Disallowing a User
 
 Simply remove their key from the keys directory, for example:
 
-	$ rm /home/user/docker-git/git-server/keys/mykey.pub
+	`$ rm /home/user/docker-git/git-server/keys/mykey.pub`
 
 ### Warnings
 
