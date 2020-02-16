@@ -1,4 +1,4 @@
-#docker-git
+# docker-git
 A small attempt a git docker image based on Alpine Linux and jkarlosb's existing project on [GitHub](https://github.com/jkarlosb/git-server-docker). This is a new repo instead of a fork because it is very different to the original.
 
 ### Quick Setup
